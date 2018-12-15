@@ -1,7 +1,12 @@
 # Solidity-Testing
+<ol>
+  <li>
 Solidity Testing - Best Practices, Methodologies and errors
+  </li>
+  <li>
 This is a space reserved to collect,maintain and share best-practices of solidity smart contract Testing
-
+  </li>
+  </ol>
 
 
 
@@ -17,7 +22,8 @@ Issue Description: ReferenceError: regeneratorRuntime is not defined
   <li>
 Context: Testing a DNS-Smart contract @  https://github.com/kanthgithub/DNSDapp/blob/master/contracts/DNSDappMaster.sol
   </li>
-  
+ </ul>
+ 
 ### Sample Test:
 ```solidity
 const DNSDappMaster = artifacts.require('DNSDappMaster')
