@@ -79,3 +79,13 @@ Then, in .babelrc
 
 Credits To: https://github.com/iraklisg
 
+### Events in Solidity Tests:
+
+- Event emitted only in some cases in tests
+- How to listen for contract events in JavaScript tests?
+
+<p>Discussion and workaround:</p>
+<ul><li>
+https://ethereum.stackexchange.com/questions/15353/how-to-listen-for-contract-events-in-javascript-tests/21661#21661   </li>
+  <li>https://github.com/trufflesuite/truffle/issues/136</li>
+</ul>
