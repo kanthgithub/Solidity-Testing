@@ -135,3 +135,5 @@ EDIT: Using testrpc
 https://ethereum.stackexchange.com/questions/15353/how-to-listen-for-contract-events-in-javascript-tests/21661#21661   </li>
   <li>https://github.com/trufflesuite/truffle/issues/136</li>
 </ul>
+
+Credits: https://ethereum.stackexchange.com/users/7132/mkaj
