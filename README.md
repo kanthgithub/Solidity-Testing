@@ -78,6 +78,7 @@ Then, in .babelrc
 ```
 
 Credits To: https://github.com/iraklisg
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 ### Events in Solidity Tests:
 
@@ -137,3 +138,5 @@ https://ethereum.stackexchange.com/questions/15353/how-to-listen-for-contract-ev
 </ul>
 
 Credits: https://ethereum.stackexchange.com/users/7132/mkaj
+
+------------------------------------------------------------------------------------------------------------------------------------------
