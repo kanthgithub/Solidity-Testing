@@ -5,17 +5,20 @@ This is a space reserved to collect,maintain and share best-practices of solidit
 
 
 
-### Issues and Fixes:
+## Issues and Fixes:
 
-## Issue-1:
+### Issue-1:
 
 While testing solidity smart-contracts using truffle, tests fails.
-
+<ul>
+<li>  
 Issue Description: ReferenceError: regeneratorRuntime is not defined
-
+  </li>
+  <li>
 Context: Testing a DNS-Smart contract @  https://github.com/kanthgithub/DNSDapp/blob/master/contracts/DNSDappMaster.sol
-
-## Sample Test:
+  </li>
+  
+### Sample Test:
 ```solidity
 const DNSDappMaster = artifacts.require('DNSDappMaster')
 
