@@ -49,6 +49,8 @@ Solution:
 
 https://github.com/babel/babel/issues/5085
 
+https://stackoverflow.com/questions/33527653/babel-6-regeneratorruntime-is-not-defined/36821986#36821986
+
 ```js
 In my case installing babel-plugin-transform-runtime solved my issues:
 
