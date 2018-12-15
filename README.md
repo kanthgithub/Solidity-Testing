@@ -17,7 +17,7 @@ This is a space reserved to collect,maintain and share best-practices of solidit
 While testing solidity smart-contracts using truffle, tests fails.
 <ul>
   <li>Issue Description: </li>
-  <li>ReferenceError: regeneratorRuntime is not defined</li>
+  <b>ReferenceError: regeneratorRuntime is not defined</b>
   </li>
   <li>
 Context: Testing a DNS-Smart contract @  https://github.com/kanthgithub/DNSDapp/blob/master/contracts/DNSDappMaster.sol
