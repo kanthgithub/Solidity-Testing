@@ -84,6 +84,52 @@ Credits To: https://github.com/iraklisg
 - Event emitted only in some cases in tests
 - How to listen for contract events in JavaScript tests?
 
+```js
+I've discovered that not all events are displayed in the truffle output window, although they might have fired correctly with the execution of a contract. I believe this to still be an issue
+
+After spending hours on this today I have come up with a solution to test that specific events are fired.
+
+Here's my example truffle javascript test:
+
+it("should do something that fires SaleMade", function() {
+    return myContract
+        .stockShelf("beer", "wine", {from: sellerAccount})
+        .then(() => myContract.sell("water", "bread", {from: sellerAccount}))
+        .then(() => utils.assertEvent(myContract, { event: "SaleMade", logIndex: 1, args: { name: "bread" }}));
+}
+The above filters the fired events that match the filter object passed to the assertEvent utility function I have in utils.js in the same folder. At the top of my javascript test I have declared:
+
+var utils = require("./utils.js");
+A snippet of my utils.js class is as follows:
+
+var _ = require("lodash");
+var Promise = require("bluebird");
+
+module.exports = {
+    assertEvent: function(contract, filter) {
+        return new Promise((resolve, reject) => {
+            var event = contract[filter.event]();
+            event.watch();
+            event.get((error, logs) => {
+                var log = _.filter(logs, filter);
+                if (log) {
+                    resolve(log);
+                } else {
+                    throw Error("Failed to find filtered event for " + filter.event);
+                }
+            });
+            event.stopWatching();
+        });
+    }
+}
+This requires other npm packages that aren't included with truffle by default. By default truffle doesn't include npm packages. I setup npm and installed the required packages like this:
+
+npm init
+npm install bluebird --save
+npm install lodash --save
+EDIT: Using testrpc
+```
+
 <p>Discussion and workaround:</p>
 <ul><li>
 https://ethereum.stackexchange.com/questions/15353/how-to-listen-for-contract-events-in-javascript-tests/21661#21661   </li>
