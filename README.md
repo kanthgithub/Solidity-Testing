@@ -78,7 +78,7 @@ Then, in .babelrc
 ```
 
 Credits To: https://github.com/iraklisg
-
+------------------------------------------------------------------------------------------------------------------------------------------
 ### Events in Solidity Tests:
 
 - Event emitted only in some cases in tests
