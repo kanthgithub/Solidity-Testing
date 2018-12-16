@@ -8,7 +8,11 @@ This is a space reserved to collect,maintain and share best-practices of solidit
   </li>
   </ol>
 
+## Test Practices:
 
+### Test Coverage:
+
+https://medium.com/edgefund/testing-and-code-coverage-of-solidity-smart-contracts-660cb6291701
 
 ## Issues and Fixes:
 
