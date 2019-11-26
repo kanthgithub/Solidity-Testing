@@ -144,3 +144,8 @@ https://ethereum.stackexchange.com/questions/15353/how-to-listen-for-contract-ev
 Credits: https://ethereum.stackexchange.com/users/7132/mkaj
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+### Read public variables in tests
+
+<p>Discussion and workaround:</p>
+https://stackoverflow.com/questions/55947716/how-to-read-public-variable-in-solidity-with-truffle-test-codes
